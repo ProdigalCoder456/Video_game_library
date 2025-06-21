@@ -9,7 +9,7 @@ router.post('/summarize', async (req, res) => {
   const response = await fetch('https://api-inference.huggingface.co/models/facebook/bart-large-cnn', {
     method: 'POST',
     headers: {
-      Authorization: `Bearer YOUR_HUGGINGFACE_API_KEY`,
+      Authorization: `Bearer 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`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ inputs: description }),
